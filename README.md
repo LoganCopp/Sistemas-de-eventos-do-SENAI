@@ -1,4 +1,9 @@
 "# Sistemas-de-eventos-do-SENAI" 
 
 
-depois vou colocar as instrucoes aqui
+pessoal cada um mexe em um arquivo. a divisao ficou assim:
+
+ formularioCadastroEvento - leticia
+ edicao  - samuel
+ Remocao - logan
+ index e detalhes - isabelly 
