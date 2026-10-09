@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: #c8102e;
+    color: #f2f4f7;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+
+.botao {
+    display: inline-block;
+    padding: 10px 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    margin: 3px 2px;
+    font-size: 14px;
+}
+
+.cadastro { 
+    background-color: #198754;
+    margin-bottom: 20px;
+}
+
+.detalhes {
+    background-color: #0d6efd;
+}
+
+.edicao {
+    background-color: #e0a800;
+    color: #222;
+}
+
+.remocao {
+    background-color: #dc3545;
+}
+
+.evento {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #00000012;
+}
+
+.evento h2 {
+    margin-top: 0;
+    color: #c8102e;
+}
+
+.mensagem {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.acoes {
+    margin-top: 15px;
+}
