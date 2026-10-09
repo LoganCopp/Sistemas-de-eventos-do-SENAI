@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <?php
      require_once 'init.php';
 
@@ -79,6 +80,9 @@
 
 
             </body>
+=======
+<?php    
+>>>>>>> Stashed changes
 
 
 
