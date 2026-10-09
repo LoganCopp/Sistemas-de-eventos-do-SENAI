@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: #c8102e;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.card  {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #00000012;
+}
+
+.campo {
+    padding: 12px;
+    border-bottom: 1px solid;
+    overflow-wrap: anywhere;
+}
+
+.campo strong {
+    display: inline-block;
+    min-width: 130px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    margin: 15px 5px 0 0;
+}
+
+.voltar {
+    background-color: #6c757d;
+}
