@@ -30,7 +30,7 @@
 
     $dataAtual = new datetime;
     $dataPosta = new datetime($_POST['data']);
-    if($dataPosta < $dataAtual){
+    if($dataPosta <= $dataAtual){
         $dataMenorHoje = true;
     }
     
@@ -94,7 +94,7 @@
 
             <div class="inicioEdicao">
             <div><label for="inicio">Inicio</label></div>
-            <input type="text" name="inicio" id="inicio"
+            <input type="time" name="inicio" id="inicio"
             value="<?= $_SESSION['eventos'][$_GET['id']]['inicio'] ?>"
             >
             <br>
@@ -102,7 +102,7 @@
             
             <div class="fimEdicao">
             <div><label for="fim">Fim</label></div>
-            <input type="text" name="fim" id="fim"
+            <input type="time" name="fim" id="fim"
             value="<?= $_SESSION['eventos'][$_GET['id']]['fim'] ?>"
             >
             <br>

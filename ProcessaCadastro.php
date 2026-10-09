@@ -16,9 +16,26 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         header("Location:cadastro.php?erro=Não preeenchido");
         exit;
     }
-
 }
-$_SESSION['eventos'][$_SESSION['proximo_id']];
-header("Location: index.php");
+if( (int) $_POST['fim'] < (int) $_POST['inicio']){
+        header("Location:cadastro.php?erro=fim maior que ini");
+        exit;
+    }
 
+
+    $dataAtual = new datetime;
+    $dataPosta = new datetime($_POST['data']);
+    if($dataPosta > $dataAtual){
+        header("Location:cadastro.php?erro=data maior que a atual");
+        exit;
+    }
+
+$_SESSION['eventos'][$_SESSION['proximo_id']] = $_POST;
+
+$idAntigo = $_SESSION['proximo_id'];
+
+$_SESSION['proximo_id'] = $idAntigo + 1;
+
+header("Location: index.php");
+exit;
 ?>
