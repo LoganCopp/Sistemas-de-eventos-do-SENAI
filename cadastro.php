@@ -20,9 +20,9 @@ require_once __DIR__ ."/init.php";
     <form action="processaCadastro.php" method="post">
 
     <section class ="form">
-        <label  for="id">Id: </label>
+        <label  for="id"> </label>
     <div class="caixa-1">
-        <input  type="Id" name="id" id="id">
+        <input  type="Id" name="id" id="id" value="<?= $_SESSION['proximo_id']?>" hidden >
         
     </div>
     </section>

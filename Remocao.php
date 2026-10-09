@@ -28,16 +28,17 @@
                 endif;
                 }
             }
-
-    print"$id";
 ?>
 
 
 
 <html>
-    <head></head>
+    <head>
+        
+    </head>
 
     <body>
+        <h1>REMOÇÃO</h1>
         <?php if($eventoDetectado == false):?>
                 <h1>Encontre um evento existente</h1>
         <?php endif;?>    

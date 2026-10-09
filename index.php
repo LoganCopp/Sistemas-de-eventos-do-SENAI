@@ -1,7 +1,5 @@
-<<<<<<< Updated upstream
 <?php
      require_once 'init.php';
-
 ?>
 
 
@@ -17,6 +15,9 @@
                         <h1>Sistema de Eventos SENAI</h1>
                             <p>Consulte os eventos disponíveis.</p>
                     </header>
+
+                    <a href="/resetaSession.php">Resetar</a>
+
                     <a class="botao cadastro" href="cadastro.php">
                         + Cadastrar um novo evento
                     </a>
@@ -65,7 +66,8 @@
 
                             <div class="acoes">
                                 <a class="botao detalhes" href="detalhe.php?id=<?= (int) $evento['id'] ?>"> Ver detalhes</a>
-                                    <a class="botao remocao" href="remocao.php?id=<?= (int) $evento['id'] ?>"> Remover</a>
+                                <a class="botao edicao" href="edicao.php?id=<?= (int) $evento['id'] ?>"> Editar</a>
+                                <a class="botao remocao" href="remocao.php?id=<?= (int) $evento['id'] ?>"> Remover</a>
                             </div>
 
                             <div>
@@ -80,11 +82,5 @@
 
 
             </body>
-=======
-<?php    
->>>>>>> Stashed changes
-
-
-
     </html>
 
