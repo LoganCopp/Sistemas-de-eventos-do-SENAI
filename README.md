@@ -15,12 +15,16 @@ pessoal cada um mexe em um arquivo. a divisao ficou assim:
 
 
 se não souberem como fazer. 
-criem a branch que voces vao editar o arquivo de vcs
-editem o codigo por la
-depois que terminarem da um git pull pra pegar tudo que ta la em main. 
-depois de puxar faz isso:
-git add .
-git commit -m "o que vc fez"
-git push origin sua-Branch
-depois disso, abram o github e abram uma pull request, entao peguem a sua branch e submetam para o main.
-assim vai aparecer para mim nas pull request ao inves de jogar tudo pro codigo
+criem a branch que voces vao editar o arquivo de vcs - git checkout -b feature/nomeDaSuaFeature
+editem o codigo por la - git checkout feature/nomeDaSuaFeature
+antes de commitar façam isso:
+git checkout main (se o terminal reclamar, façam antes do checkout: git stash)
+git pull origin main
+git checkout feature/nomeDaSuaFeature
+git merge main
+git add . 
+git commit -m "mensagem do que voce fez"
+git push origin feature/nomeDaSuaFeature
+
+
+
